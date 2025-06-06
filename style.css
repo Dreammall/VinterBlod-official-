@@ -54,6 +54,10 @@
       transform: translateX(-50%);
     }
 
+    .live-image{
+      width: 600px;
+      margin-top: 100px;
+    }
 
     .logo {
       width: 500px;
