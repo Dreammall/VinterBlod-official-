@@ -4,7 +4,7 @@
       background-image: url("images/background.png");
       background-size:cover;
       opacity: 0;         /* 最初は透明 */
-      transition: opacity 1.5s ease-in-out 0.5s;
+      transition: opacity 2.0s ease-in-out 1.0s;
       color: #ccc;
       text-align: center;
     }
