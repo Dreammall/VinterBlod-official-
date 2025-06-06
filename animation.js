@@ -26,7 +26,7 @@ $(function() {
   // 背景フェードイン処理
   $('body').addClass('bg-visible');
 
-  // 全体フェードイン（必要なら対象を .container のみに絞るとスムーズ）
+  // 全体フェードイン
   $('.container').hide().fadeIn(1000);
 
 });
