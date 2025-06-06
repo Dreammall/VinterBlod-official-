@@ -5,7 +5,7 @@
       background-size:cover;
       background-color: #0d0d0d;
       opacity: 0;         /* 最初は透明 */
-      transition: opacity 4.0s ease-in-out 3.0s;
+      transition: opacity 4.0s ease-in-out 0.5s;
       color: #ccc;
       text-align: center;
     }
