@@ -3,6 +3,7 @@
       font-family: 'Georgia', serif;
       background-image: url("images/background.jpg");
       background-size:cover;
+      background-color: #0d0d0d;
       opacity: 0;         /* 最初は透明 */
       transition: opacity 2.0s ease-in-out 1.0s;
       color: #ccc;
