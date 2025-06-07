@@ -1,5 +1,5 @@
   /* ハンバーガー画像の共通設定 */
-    .hamburger-wrapper {
+    body.pc.hamburger-wrapper {
       position: fixed;
       top: 60px;
       left: 320px;
@@ -7,22 +7,22 @@
       cursor: pointer;
     }
     
-   .hamburger-icon {
+   body.pc.hamburger-icon {
       width: 36px;
       height: 36px;
       cursor: pointer;
       pointer-events: auto;
     }
 
-    .open-icon {
+    body.pc.open-icon {
       display: block; /* 最初に表示されるのは「メニューを開く」画像 */
     }
-    .close-icon {
+    body.pc.close-icon {
       display: none;
     }
 
     /* モバイルメニュー */
-    .mobile-nav {
+    body.pc.mobile-nav {
       display: none; /* jQueryで fadeToggle */
       position: fixed;
       top: 0;
@@ -34,36 +34,37 @@
       padding: 80px 20px;
       z-index: 1000;
     }
-    .mobile-nav ul {
+    body.pc.mobile-nav ul {
       list-style: none;
       padding: 0;
     }
-    .mobile-nav li {
+    body.pc.mobile-nav li {
       margin: 20px 0;
     }
-    .mobile-nav a {
+    body.pc.mobile-nav a {
       color: #fff;
       text-decoration: none;
       font-size: 1.2rem;
     }
+}
 
  /*   ▼ レスポンシブ対応*/
     @media screen and (min-width: 769px) {
-     .hamburger-wrapper {
+     body.mobile.hamburger-wrapper {
         position: fixed;
         top: 60px;
         left: 180px;
         z-index: 1001;
         cursor: pointer;
       }
-      .hamburger-icon {
+      body.mobile.hamburger-icon {
         width: 70px;
         height: 70px;
         cursor: pointer;
         pointer-events: auto;
       }
           /* モバイルメニュー */
-      .mobile-nav {
+      body.mobile.mobile-nav {
         display: none; /* jQueryで fadeToggle */
         position: fixed;
         top: 0;
