@@ -18,45 +18,49 @@ body.bg-visible {
 .side-bg {
   position: absolute;
   top: 0;
-  width: 200px; /* 少し縮小 */
   height: 200vh;
   background-image: url('images/background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
   z-index: -1;
-  pointer-events: none;
-  opacity: 0.5;
+  pointer-events: none; /* 背景がクリックを邪魔しないように */
+  opacity: 0.5; /* 背景としてなじませたい場合 */
+  width: 300px; /* PC用の元サイズ */
 }
 
-/* 左右配置 */
+/* 左端に配置 */
 .side-bg.left {
   left: 0;
 }
+
+/* 右端に配置＋反転 */
 .side-bg.right {
   right: 0;
-  transform: scaleX(-1);
+  transform: scaleX(-1); /* 左右反転 */
 }
 
 .container {
-  max-width: 90%; /* スマホは幅広めに */
+  max-width: 600px;
   margin: 0 auto;
-  padding: 20px 15px;
+  padding: 20px;
 }
 
-/* 逆十字 */
+/* 小さな逆十字 */
 .cross-divider {
   position: relative;
   width: 100%;
   height: 20px;
   margin: 30px 0;
 }
+
 .cross-divider::before,
 .cross-divider::after {
   content: "";
   position: absolute;
   background-color: #999;
 }
+
 .cross-divider::before {
   width: 2px;
   height: 20px;
@@ -64,6 +68,7 @@ body.bg-visible {
   left: 50%;
   transform: translateX(-50%) rotate(180deg);
 }
+
 .cross-divider::after {
   width: 10px;
   height: 2px;
@@ -73,26 +78,23 @@ body.bg-visible {
 }
 
 .member-image {
-  width: 100%; /* スマホは画像幅100% */
-  max-width: 300px; /* 最大幅設定 */
-  margin-top: 40px;
-  height: auto;
+  width: 90%;
+  margin-top: 60px;
 }
 
 .logo {
-  width: 100%;
-  max-width: 300px;
-  margin-top: 20px;
+  width: 90%; /* PCのロゴサイズ（元サイズ） */
+  margin-top: 30px;
 }
 
 .tagline {
   font-style: papyrus;
-  font-size: 18pt;
-  margin: 20px 0;
+  font-size: 20pt;
+  margin: 30px 0;
 }
 
 h2 {
-  margin: 30px 0 10px;
+  margin: 40px 0 10px;
   font-weight: normal;
   letter-spacing: 1px;
   color: #eee;
@@ -107,18 +109,16 @@ h2 {
 
 .albums {
   display: flex;
-  flex-wrap: wrap; /* スマホで折り返し可能に */
   justify-content: center;
-  gap: 15px;
+  gap: 20px;
   margin: 20px 0;
 }
 
 .album img {
-  width: 120px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
   border: 2px solid #333;
-  box-shadow: 0 0 10px rgba(255,255,255,0.1);
-  object-fit: cover;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
 }
 
 ul {
@@ -131,8 +131,8 @@ ul li {
 }
 
 .icons {
-  width: 20px;
-  height: 20px;
+  width: 3%;
+  height: 3%;
 }
 
 .sold-out {
@@ -146,54 +146,19 @@ ul li {
 }
 
 footer {
-  margin-top: 40px;
+  margin-top: 50px;
   font-size: 0.9em;
   color: #666;
 }
 
-/* === PC画面用の調整（768px以上） === */
-@media screen and (min-width: 768px) {
+/* モバイル用調整 */
+@media screen and (max-width: 767px) {
   .side-bg {
-    width: 300px;
-  }
-
-  .container {
-    max-width: 600px;
-    padding: 20px;
-  }
-
-  .member-image {
-    width: 90%;
-    max-width: none;
-    margin-top: 60px;
+    width: 150px; /* モバイルで小さく */
   }
 
   .logo {
-    width: 90%;
-    margin-top: 30px;
-  }
-
-  .tagline {
-    font-size: 20pt;
-    margin: 30px 0;
-  }
-
-  .albums {
-    gap: 20px;
-    flex-wrap: nowrap;
-  }
-
-  .album img {
-    width: 150px;
-    height: 150px;
-  }
-
-  .icons {
-    width: 3%;
-    height: 3%;
-  }
-
-  footer {
-    margin-top: 50px;
+    width: 70%; /* モバイルでロゴを小さく */
+    margin-top: 20px;
   }
 }
