@@ -26,6 +26,7 @@
       background-position: top;
       z-index: -1;
       pointer-events: none; /* 背景がクリックを邪魔しないように */
+      opacity: 0.2; /* 背景としてなじませたい場合 */
     }
     
     /* 左端に配置 */
