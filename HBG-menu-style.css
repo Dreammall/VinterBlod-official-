@@ -1,79 +1,80 @@
-  /* ハンバーガー画像の共通設定 */
-    body.pc.hamburger-wrapper {
-      position: fixed;
-      top: 60px;
-      left: 320px;
-      z-index: 1001;
-      cursor: pointer;
-    }
-    
-   body.pc.hamburger-icon {
-      width: 36px;
-      height: 36px;
-      cursor: pointer;
-      pointer-events: auto;
-    }
-
-    body.pc.open-icon {
-      display: block; /* 最初に表示されるのは「メニューを開く」画像 */
-    }
-    body.pc.close-icon {
-      display: none;
-    }
-
-    /* モバイルメニュー */
-    body.pc.mobile-nav {
-      display: none; /* jQueryで fadeToggle */
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 80%;
-      max-width: 320px;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.96);
-      padding: 80px 20px;
-      z-index: 1000;
-    }
-    body.pc.mobile-nav ul {
-      list-style: none;
-      padding: 0;
-    }
-    body.pc.mobile-nav li {
-      margin: 20px 0;
-    }
-    body.pc.mobile-nav a {
-      color: #fff;
-      text-decoration: none;
-      font-size: 1.2rem;
-    }
+/* PC表示用 */
+body.pc .hamburger-wrapper {
+  position: fixed;
+  top: 60px;
+  left: 320px;
+  z-index: 1001;
+  cursor: pointer;
 }
 
- /*   ▼ レスポンシブ対応*/
-    @media screen and (min-width: 769px) {
-     body.mobile.hamburger-wrapper {
-        position: fixed;
-        top: 60px;
-        left: 180px;
-        z-index: 1001;
-        cursor: pointer;
-      }
-      body.mobile.hamburger-icon {
-        width: 70px;
-        height: 70px;
-        cursor: pointer;
-        pointer-events: auto;
-      }
-          /* モバイルメニュー */
-      body.mobile.mobile-nav {
-        display: none; /* jQueryで fadeToggle */
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 40%;
-        max-width: 300px;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.96);
-        padding: 80px 20px;
-        z-index: 1000;
-      }
-    }
+body.pc .hamburger-icon {
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+body.pc .open-icon {
+  display: block;
+}
+
+body.pc .close-icon {
+  display: none;
+}
+
+body.pc .mobile-nav {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80%;
+  max-width: 320px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.96);
+  padding: 80px 20px;
+  z-index: 1000;
+}
+
+body.pc .mobile-nav ul {
+  list-style: none;
+  padding: 0;
+}
+body.pc .mobile-nav li {
+  margin: 20px 0;
+}
+body.pc .mobile-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+/* ▼ レスポンシブ（モバイル用） */
+@media screen and (min-width: 769px) {
+  body.mobile .hamburger-wrapper {
+    position: fixed;
+    top: 60px;
+    left: 180px;
+    z-index: 1001;
+    cursor: pointer;
+  }
+
+  body.mobile .hamburger-icon {
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    pointer-events: auto;
+  }
+
+  body.mobile .mobile-nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 40%;
+    max-width: 300px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.96);
+    padding: 80px 20px;
+    z-index: 1000;
+  }
+}
