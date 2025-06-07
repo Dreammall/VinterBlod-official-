@@ -16,7 +16,7 @@
     
       /* 左右の背景共通 */
     .side-bg {
-      /*position: fixed; /* ← スクロールしても固定表示 */
+      position: absolute;
       top: 0;
       width: 100px; /* 画像の実サイズに合わせて調整（例: 約100px） */
       height: 100vh;
