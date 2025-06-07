@@ -19,16 +19,17 @@
       padding: 20px;
     }
 
-    .background{
-      width: 100%; /* 画像の幅を指定 */
-      height: 100%; /* 画像の高さ (必要に応じて調整) */
-      position: absolute;
+    .side-bg.left {
       left: 0;
-      right: 0;
-      transform: scaleX(-1); /* 左右反転 */
-      object-fit: cover; /* 画像のサイズ調整 (必要に応じて) */
+      background-image: url('background.jpg');
+      transform: scaleX(-1); /* 左側は反転 */
     }
- 
+
+    .side-bg.right {
+      right: 0;
+      background-image: url('background.jpg'); /* 反転しない */
+    }
+
     /*小さな逆十字*/
     .cross-divider {
       position: relative;
