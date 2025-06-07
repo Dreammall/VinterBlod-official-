@@ -6,6 +6,7 @@ body {
   text-align: center;
   position: relative;
   overflow-x: hidden;
+  overflow-y: auto;
 }
 
 /* 左右の背景共通 */
