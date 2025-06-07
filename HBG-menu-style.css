@@ -53,11 +53,12 @@
 @media screen and (max-width: 768px) {
   .hamburger-wrapper {
     left: 20px;
+    top: 20px;
   }
 
   .hamburger-icon {
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
   }
 
   .mobile-nav {
