@@ -17,8 +17,8 @@
     .side-bg {
       position: absolute;
       top: 0;
-      width: 100%; /* 左右それぞれ幅を調整 */
-      height: 100%;
+      width: 25vh; /* 左右それぞれ幅を調整 */
+      height: 100vh;
       background-size: cover;
       background-repeat: repeat;
       background-position: center;
