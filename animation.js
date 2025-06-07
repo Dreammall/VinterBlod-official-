@@ -25,11 +25,12 @@ $(function() {
   // 背景フェードイン処理
   $('body').addClass('bg-visible');
 
-  // セクションごとのフェードイン
+  
   $('.container').hide().fadeIn(1000);
 
 });
 
+// セクションごとのフェードイン
 document.addEventListener('DOMContentLoaded', function () {
   const targets = document.querySelectorAll('.fade-section');
   
@@ -44,5 +45,23 @@ document.addEventListener('DOMContentLoaded', function () {
     threshold: 0.5 // 10%見えたら発火
   });
   targets.forEach(target => observer.observe(target));
+});
+
+$(document).ready(function () {
+  function adjustSideBgHeight() {
+    const pageHeight = Math.max(
+      $(document).height(),
+      $(window).height()
+    );
+    $(".side-bg").css("height", pageHeight + "px");
+  }
+
+  // 初回実行
+  adjustSideBgHeight();
+
+  // リサイズ時も実行（スマホ対応）
+  $(window).on("resize", function () {
+    adjustSideBgHeight();
+  });
 });
 
