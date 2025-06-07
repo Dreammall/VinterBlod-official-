@@ -2,6 +2,7 @@ body {
   margin: 0;
   font-family: 'Georgia', serif;
   background-color: #0d0d0d;
+  background-size: 100% auto;
   color: #ccc;
   text-align: center;
   position: relative;
