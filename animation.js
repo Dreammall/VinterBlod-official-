@@ -25,7 +25,23 @@ $(function() {
   // 背景フェードイン処理
   $('body').addClass('bg-visible');
 
-  // 全体フェードイン
+  // セクションごとのフェードイン
   $('.container').hide().fadeIn(1000);
 
+   document.addEventListener('DOMContentLoaded', function () {
+    const targets = document.querySelectorAll('.fade-section');
+
+    const observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('fade-in');
+          obs.unobserve(entry.target); // 一度だけアニメーション
+        }
+      });
+    }, {
+      threshold: 0.1 // 10%見えたら発火
+    });
+
+    targets.forEach(target => observer.observe(target));
+  });
 });
