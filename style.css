@@ -2,28 +2,10 @@ body {
   margin: 0;
   font-family: 'Georgia', serif;
   background-color: #0d0d0d;
-  opacity: 0;
-  transition: opacity 5.0s ease-in-out 0.3s;
   color: #ccc;
   text-align: center;
   position: relative;
   overflow-x: hidden;
-}
-
-body.bg-visible {
-  opacity: 1;
-}
-
-.fade-section {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
-  will-change: opacity, transform;
-}
-
-.fade-in {
-  opacity: 1;
-  transform: translateY(0);
 }
 
 /* 左右の背景共通 */
@@ -178,6 +160,7 @@ footer {
     width: 75%; /* モバイルでロゴを小さく */
     margin-top: 20px;
   }
+  
   .member-image {
     margin-top: 40px;
   }
