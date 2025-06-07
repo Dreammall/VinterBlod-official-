@@ -14,29 +14,30 @@
       opacity: 1;
     }
     
+      /* 左右の背景共通 */
     .side-bg {
-      position: absolute;
+      position: fixed; /* ← スクロールしても固定表示 */
       top: 0;
-      width: 100%; /* 左右それぞれ幅を調整 */
-      /*height: 150vh;*/
-      /*background-size: cover;*/
+      width: 100px; /* 画像の実サイズに合わせて調整（例: 約100px） */
+      height: 100vh;
+      background-image: url('/mnt/data/background.jpg');
+      background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
       z-index: -1;
-      opacity: 0.1;  /*背景としてなじませたい場合*/ 
+      pointer-events: none; /* 背景がクリックを邪魔しないように */
     }
     
+    /* 左端に配置 */
     .side-bg.left {
-        left: 0;
-        background-image: url('images/background.jpg');
-     }
-    
-    .side-bg.right {
-        right: 0;
-        background-image: url('images/background.jpg'); /* 反転しない */
-        transform: scaleX(-1); /* 反転 */
+      left: 0;
     }
-
+    
+    /* 右端に配置＋反転 */
+    .side-bg.right {
+      right: 0;
+      transform: scaleX(-1); /* 左右反転 */
+    }
 
     .container {
       max-width: 600px;
