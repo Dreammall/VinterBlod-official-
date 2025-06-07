@@ -166,4 +166,8 @@ footer {
     width: 75%; /* モバイルでロゴを小さく */
     margin-top: 20px;
   }
+  .member-image {
+    margin-top: 40px;
+  }
+
 }
