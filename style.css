@@ -1,7 +1,6 @@
     body {
       margin: 0;
       font-family: 'Georgia', serif;
-      background-image: url("images/background.jpg");
       background-size:cover;
       background-color: #0d0d0d;
       opacity: 0;         /* 最初は透明 */
@@ -20,6 +19,15 @@
       padding: 20px;
     }
 
+    .background{
+      width: 100%; /* 画像の幅を指定 */
+      height: 50px; /* 画像の高さ (必要に応じて調整) */
+      position: absolute;
+      left: 0;
+      right: 0;
+      transform: scaleX(-1); /* 左右反転 */
+      object-fit: cover; /* 画像のサイズ調整 (必要に応じて) */
+    }
  
     /*小さな逆十字*/
     .cross-divider {
