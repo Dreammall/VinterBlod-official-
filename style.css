@@ -14,15 +14,24 @@ body {
 .side-bg {
   position: absolute;
   top: 0;
-  height: 100% auto;
+  left: 0;
+  width: 300px;
+  height: 100%;
+  min-height: 100vh; /* 背が足りないときの保険 */
   background-image: url('images/background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
   z-index: -1;
-  pointer-events: none; /* 背景がクリックを邪魔しないように */
-  opacity: 0.5; /* 背景としてなじませたい場合 */
-  width: 300px; 
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+/* 右端に配置＋反転 */
+.side-bg.right {
+  left: auto;
+  right: 0;
+  transform: scaleX(-1);
 }
 
 /* 左端に配置 */
@@ -30,11 +39,11 @@ body {
   left: 0;
 }
 
-/* 右端に配置＋反転 */
+/* 
 .side-bg.right {
   right: 0;
   transform: scaleX(-1); /* 左右反転 */
-}
+} */
 
 .container {
   max-width: 600px;
