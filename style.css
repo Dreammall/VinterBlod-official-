@@ -1,17 +1,42 @@
     body {
       margin: 0;
       font-family: 'Georgia', serif;
-      background-size:cover;
       background-color: #0d0d0d;
-      opacity: 0;         /* 最初は透明 */
+      opacity: 0;
       transition: opacity 5.0s ease-in-out 0.3s;
       color: #ccc;
       text-align: center;
+      position: relative;
+      overflow-x: hidden;
     }
 
     body.bg-visible {
-      opacity: 1;         /* フェードイン対象 */
+      opacity: 1;
     }
+    
+    .side-bg {
+      position: absolute;
+      top: 0;
+      width: 25vw; /* 左右それぞれ幅を調整 */
+      height: 100vh;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      z-index: -1;
+      opacity: 0.2; /* 背景としてなじませたい場合 */
+    }
+    
+    .side-bg.left {
+        left: 0;
+        background-image: url('background.jpg');
+        transform: scaleX(-1); /* 左側は反転 */
+     }
+    
+    .side-bg.right {
+        right: 0;
+        background-image: url('background.jpg'); /* 反転しない */
+    }
+
 
     .container {
       max-width: 600px;
@@ -19,16 +44,6 @@
       padding: 20px;
     }
 
-    .side-bg.left {
-      left: 0;
-      background-image: url('background.jpg');
-      transform: scaleX(-1); /* 左側は反転 */
-    }
-
-    .side-bg.right {
-      right: 0;
-      background-image: url('background.jpg'); /* 反転しない */
-    }
 
     /*小さな逆十字*/
     .cross-divider {
