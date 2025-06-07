@@ -28,20 +28,21 @@ $(function() {
   // セクションごとのフェードイン
   $('.container').hide().fadeIn(1000);
 
-   document.addEventListener('DOMContentLoaded', function () {
-    const targets = document.querySelectorAll('.fade-section');
-
-    const observer = new IntersectionObserver((entries, obs) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('fade-in');
-          obs.unobserve(entry.target); // 一度だけアニメーション
-        }
-      });
-    }, {
-      threshold: 0.1 // 10%見えたら発火
-    });
-
-    targets.forEach(target => observer.observe(target));
-  });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  const targets = document.querySelectorAll('.fade-section');
+  
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('fade-in');
+        obs.unobserve(entry.target); // 一度だけアニメーション
+      }
+    });
+  }, {
+    threshold: 0.1 // 10%見えたら発火
+  });
+  targets.forEach(target => observer.observe(target));
+});
+
