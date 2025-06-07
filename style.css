@@ -23,7 +23,7 @@
       background-image: url('images/background.jpg');
       background-size: cover;
       background-repeat: no-repeat;
-      background-position: center;
+      background-position: top;
       z-index: -1;
       pointer-events: none; /* 背景がクリックを邪魔しないように */
     }
