@@ -21,7 +21,7 @@
 
     .background{
       width: 100%; /* 画像の幅を指定 */
-      height: 50px; /* 画像の高さ (必要に応じて調整) */
+      height: 100%; /* 画像の高さ (必要に応じて調整) */
       position: absolute;
       left: 0;
       right: 0;
