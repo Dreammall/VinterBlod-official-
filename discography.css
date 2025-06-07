@@ -12,16 +12,16 @@
   border-radius: 10px;
   box-shadow: 0 0 10px #000;
 }
-.album img {
+.album-listen img {
   width: 100%;
   border-radius: 8px;
 }
-.album h2 {
+.album-listen h2 {
   font-family: 'Times New Roman', serif;
   font-size: 1.5em;
   margin-top: 15px;
 }
-.album p {
+.album-listen p {
   font-size: 0.95em;
   color: #ccc;
 }
