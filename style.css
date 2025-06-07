@@ -26,7 +26,7 @@ body.bg-visible {
   z-index: -1;
   pointer-events: none; /* 背景がクリックを邪魔しないように */
   opacity: 0.5; /* 背景としてなじませたい場合 */
-  width: 210px; 
+  width: 300px; 
 }
 
 /* 左端に配置 */
