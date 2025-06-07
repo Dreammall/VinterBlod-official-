@@ -47,21 +47,21 @@ document.addEventListener('DOMContentLoaded', function () {
   targets.forEach(target => observer.observe(target));
 });
 
-// $(document).ready(function () {
-//   function adjustSideBgHeight() {
-//     const pageHeight = Math.max(
-//       $(document).height(),
-//       $(window).height()
-//     );
-//     $(".side-bg").css("height", pageHeight + "px");
-//   }
+$(document).ready(function () {
+  function adjustSideBgHeight() {
+    const pageHeight = Math.max(
+      $(document).height(),
+      $(window).height()
+    );
+    $(".side-bg").css("height", pageHeight + "px");
+  }
 
-//   // 初回実行
-//   adjustSideBgHeight();
+  // 初回実行
+  adjustSideBgHeight();
 
-//   // リサイズ時も実行（スマホ対応）
-//   $(window).on("resize", function () {
-//     adjustSideBgHeight();
-//   });
+  // リサイズ時も実行（スマホ対応）
+  $(window).on("resize", function () {
+    adjustSideBgHeight();
+  });
 });
 
