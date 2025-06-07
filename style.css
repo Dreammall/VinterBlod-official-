@@ -154,11 +154,16 @@ footer {
 /* モバイル用調整 */
 @media screen and (max-width: 767px) {
   .side-bg {
-    width: 90px; /* モバイルで小さく */
+    width: 80px; /* モバイルで小さく */
+  }
+
+  .tagline {
+    font-style: italic;
+    font-size: 15pt;
   }
 
   .logo {
-    width: 70%; /* モバイルでロゴを小さく */
+    width: 75%; /* モバイルでロゴを小さく */
     margin-top: 20px;
   }
 }
