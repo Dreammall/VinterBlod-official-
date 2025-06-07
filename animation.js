@@ -1,5 +1,4 @@
 $(function() {
-
   // 開くアイコンをクリック → メニュー表示＆アイコン切り替え
   $('.open-icon').on('click', function(e) {
     e.stopPropagation();
@@ -30,3 +29,12 @@ $(function() {
   $('.container').hide().fadeIn(1000);
 
 });
+
+$(function() {
+  if (window.innerWidth >= 769) {
+    $('body').removeClass('mobile').addClass('pc');
+  } else {
+    $('body').removeClass('pc').addClass('mobile');
+  }
+});
+
