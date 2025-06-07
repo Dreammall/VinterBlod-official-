@@ -13,6 +13,14 @@
     pointer-events: auto;
   }
 
+  body.mobile .open-icon {
+    display: block;
+  }
+  
+  body.mobile .close-icon {
+    display: none;
+  }
+
   body.mobile .mobile-nav {
     display: none;
     position: fixed;
@@ -24,10 +32,25 @@
     background-color: rgba(0, 0, 0, 0.96);
     padding: 80px 20px;
     z-index: 1000;
-  }/* PC表示用 */
+  }
+
+  body.mobile .mobile-nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  body.mobile .mobile-nav li {
+    margin: 20px 0;
+  }
+  
+  body.mobile .mobile-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
 
 
-/* ▼ レスポンシブ（モバイル用） */
+/* ▼ レスポンシブ（PC用） */
 @media screen and (min-width: 769px) {
   body.pc .hamburger-wrapper {
     position: fixed;
