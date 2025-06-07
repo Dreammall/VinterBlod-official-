@@ -18,8 +18,8 @@
     .side-bg {
       position: absolute;
       top: 0;
-      width: 160px; /* 画像の実サイズに合わせて調整（例: 約100px） */
-      height: 100vh;
+      width: 190px; /* 画像の実サイズに合わせて調整（例: 約100px） */
+      height: 200vh;
       background-image: url('images/background.jpg');
       background-size: cover;
       background-repeat: no-repeat;
