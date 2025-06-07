@@ -1,106 +1,84 @@
-  body.mobile .hamburger-wrapper {
-    position: fixed;
-    top: 60px;
+/* 共通スタイル */
+.hamburger-wrapper {
+  position: fixed;
+  top: 60px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.hamburger-icon {
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.open-icon {
+  display: block;
+}
+
+.close-icon {
+  display: none;
+}
+
+.mobile-nav {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.96);
+  padding: 80px 20px;
+  height: 100%;
+  z-index: 1000;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.mobile-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobile-nav li {
+  margin: 20px 0;
+}
+
+.mobile-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+/* モバイル（768px以下） */
+@media screen and (max-width: 768px) {
+  .hamburger-wrapper {
     left: 180px;
-    z-index: 1001;
-    cursor: pointer;
   }
 
-  body.mobile .hamburger-icon {
+  .hamburger-icon {
     width: 70px;
     height: 70px;
-    cursor: pointer;
-    pointer-events: auto;
   }
 
-  body.mobile .open-icon {
-    display: block;
-  }
-  
-  body.mobile .close-icon {
-    display: none;
-  }
-
-  body.mobile .mobile-nav {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
+  .mobile-nav {
     width: 40%;
     max-width: 300px;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.96);
-    padding: 80px 20px;
-    z-index: 1000;
   }
+}
 
-  body.mobile .mobile-nav ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  body.mobile .mobile-nav li {
-    margin: 20px 0;
-  }
-  
-  body.mobile .mobile-nav a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2rem;
-  }
-
-
-/* ▼ レスポンシブ（PC用） */
+/* PC（769px以上） */
 @media screen and (min-width: 769px) {
-  body.pc .hamburger-wrapper {
-    position: fixed;
-    top: 60px;
+  .hamburger-wrapper {
     left: 320px;
-    z-index: 1001;
-    cursor: pointer;
   }
-  
-  body.pc .hamburger-icon {
+
+  .hamburger-icon {
     width: 36px;
     height: 36px;
-    cursor: pointer;
-    pointer-events: auto;
   }
-  
-  body.pc .open-icon {
-    display: block;
-  }
-  
-  body.pc .close-icon {
-    display: none;
-  }
-  
-  body.pc .mobile-nav {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
+
+  .mobile-nav {
     width: 80%;
     max-width: 320px;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.96);
-    padding: 80px 20px;
-    z-index: 1000;
   }
-  
-  body.pc .mobile-nav ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  body.pc .mobile-nav li {
-    margin: 20px 0;
-  }
-  
-  body.pc .mobile-nav a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2rem;
-  }
-  
 }
