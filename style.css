@@ -154,7 +154,7 @@ footer {
 /* モバイル用調整 */
 @media screen and (max-width: 767px) {
   .side-bg {
-    width: 80px; /* モバイルで小さく */
+    width: 60px; /* モバイルで小さく */
   }
 
   .tagline {
