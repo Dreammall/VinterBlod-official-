@@ -19,11 +19,11 @@
       top: 0;
       width: 80vh; /* 左右それぞれ幅を調整 */
       height: 100vh;
-      background-size: cover;
+      /*background-size: cover;*/
       background-repeat: no-repeat;
       background-position: center;
       z-index: -1;
-      opacity: 0.2; /* 背景としてなじませたい場合 */
+      /*opacity: 0.2;  背景としてなじませたい場合 */
     }
     
     .side-bg.left {
