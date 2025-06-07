@@ -52,13 +52,13 @@
      .hamburger-wrapper {
         position: fixed;
         top: 60px;
-        left: 250px;
+        left: 200px;
         z-index: 1001;
         cursor: pointer;
       }
       .hamburger-icon {
-        width: 60px;
-        height: 60px;
+        width: 70px;
+        height: 70px;
         cursor: pointer;
         pointer-events: auto;
       }
@@ -69,19 +69,10 @@
         top: 0;
         left: 0;
         width: 60%;
-        max-width: 320px;
+        max-width: 300px;
         height: 100%;
         background-color: rgba(0, 0, 0, 0.96);
         padding: 80px 20px;
         z-index: 1000;
       }
-      .mobile-nav li {
-        margin: 50px 0;
-      }
-      .mobile-nav a {
-        color: #fff;
-        text-decoration: none;
-        font-size: 4.0rem;
-      }
-
     }
