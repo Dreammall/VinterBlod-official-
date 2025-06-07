@@ -24,7 +24,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.96);
+  background-color: rgba(0, 0, 0, 0.86);
   padding: 80px 20px;
   height: 100%;
   z-index: 1000;
@@ -52,12 +52,12 @@
 /* モバイル（768px以下） */
 @media screen and (max-width: 768px) {
   .hamburger-wrapper {
-    left: 180px;
+    left: 20px;
   }
 
   .hamburger-icon {
-    width: 70px;
-    height: 70px;
+    width: 20px;
+    height: 20px;
   }
 
   .mobile-nav {
