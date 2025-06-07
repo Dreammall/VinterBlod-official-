@@ -154,7 +154,7 @@ footer {
 /* モバイル用調整 */
 @media screen and (max-width: 767px) {
   .side-bg {
-    width: 150px; /* モバイルで小さく */
+    width: 110px; /* モバイルで小さく */
   }
 
   .logo {
