@@ -47,12 +47,12 @@
       font-size: 1.2rem;
     }
 
- /*   ▼ レスポンシブ対応：PCではメニュー＆アイコンを非表示*/
+ /*   ▼ レスポンシブ対応*/
     @media screen and (min-width: 769px) {
      .hamburger-wrapper {
         position: fixed;
         top: 60px;
-        left: 200px;
+        left: 180px;
         z-index: 1001;
         cursor: pointer;
       }
@@ -68,7 +68,7 @@
         position: fixed;
         top: 0;
         left: 0;
-        width: 60%;
+        width: 40%;
         max-width: 300px;
         height: 100%;
         background-color: rgba(0, 0, 0, 0.96);
