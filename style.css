@@ -17,10 +17,10 @@
     .side-bg {
       position: absolute;
       top: 0;
-      width: 25vw; /* 左右それぞれ幅を調整 */
-      height: 100vh;
+      width: 100%; /* 左右それぞれ幅を調整 */
+      height: 100%;
       background-size: cover;
-      background-repeat: no-repeat;
+      background-repeat: repeat;
       background-position: center;
       z-index: -1;
       opacity: 0.2; /* 背景としてなじませたい場合 */
@@ -29,12 +29,12 @@
     .side-bg.left {
         left: 0;
         background-image: url('images/background.jpg');
-        transform: scaleX(-1); /* 左側は反転 */
      }
     
     .side-bg.right {
         right: 0;
         background-image: url('images/background.jpg'); /* 反転しない */
+        transform: scaleX(-1); /* 反転 */
     }
 
 
