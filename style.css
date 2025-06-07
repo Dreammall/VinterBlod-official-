@@ -14,7 +14,7 @@ body {
 .side-bg {
   position: absolute;
   top: 0;
-  height: auto;
+  height: 100% auto;
   background-image: url('images/background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
