@@ -1,55 +1,3 @@
-/* PC表示用 */
-body.pc .hamburger-wrapper {
-  position: fixed;
-  top: 60px;
-  left: 320px;
-  z-index: 1001;
-  cursor: pointer;
-}
-
-body.pc .hamburger-icon {
-  width: 36px;
-  height: 36px;
-  cursor: pointer;
-  pointer-events: auto;
-}
-
-body.pc .open-icon {
-  display: block;
-}
-
-body.pc .close-icon {
-  display: none;
-}
-
-body.pc .mobile-nav {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 80%;
-  max-width: 320px;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.96);
-  padding: 80px 20px;
-  z-index: 1000;
-}
-
-body.pc .mobile-nav ul {
-  list-style: none;
-  padding: 0;
-}
-body.pc .mobile-nav li {
-  margin: 20px 0;
-}
-body.pc .mobile-nav a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.2rem;
-}
-
-/* ▼ レスポンシブ（モバイル用） */
-@media screen and (max-width: 769px) {
   body.mobile .hamburger-wrapper {
     position: fixed;
     top: 60px;
@@ -76,5 +24,60 @@ body.pc .mobile-nav a {
     background-color: rgba(0, 0, 0, 0.96);
     padding: 80px 20px;
     z-index: 1000;
+  }/* PC表示用 */
+
+
+/* ▼ レスポンシブ（モバイル用） */
+@media screen and (min-width: 769px) {
+  body.pc .hamburger-wrapper {
+    position: fixed;
+    top: 60px;
+    left: 320px;
+    z-index: 1001;
+    cursor: pointer;
   }
+  
+  body.pc .hamburger-icon {
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    pointer-events: auto;
+  }
+  
+  body.pc .open-icon {
+    display: block;
+  }
+  
+  body.pc .close-icon {
+    display: none;
+  }
+  
+  body.pc .mobile-nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80%;
+    max-width: 320px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.96);
+    padding: 80px 20px;
+    z-index: 1000;
+  }
+  
+  body.pc .mobile-nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  body.pc .mobile-nav li {
+    margin: 20px 0;
+  }
+  
+  body.pc .mobile-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  
 }
