@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   }, {
-    threshold: 0.1 // 10%見えたら発火
+    threshold: 0.5 // 10%見えたら発火
   });
   targets.forEach(target => observer.observe(target));
 });
